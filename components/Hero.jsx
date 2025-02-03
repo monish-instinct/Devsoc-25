@@ -34,18 +34,18 @@ export default function Hero() {
             </a>
           </div>
         </motion.div>
-        <motion.div
+        {/* <motion.div
           className="mt-12"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.6 }}>
           <Image
-            src="/placeholder.svg?height=400&width=600"
+            src="/placeholer.svg?height=400&width=600"
             alt="AI Voice Assistant Illustration"
             width={600}
             height={400}
             className="mx-auto" />
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>)
   );
