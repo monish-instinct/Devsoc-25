@@ -28,7 +28,7 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.4 }}>
           <div className="rounded-md shadow">
             <a
-              href="#"
+              href="/dashboard"
               className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 md:py-4 md:text-lg md:px-10 transition duration-150 ease-in-out transform hover:scale-105">
               Get Started
             </a>
@@ -40,7 +40,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.6 }}>
           <Image
-            src="/placeholer.svg?height=400&width=600"
+            src="/placeholder.svg?height=400&width=600"
             alt="AI Voice Assistant Illustration"
             width={600}
             height={400}

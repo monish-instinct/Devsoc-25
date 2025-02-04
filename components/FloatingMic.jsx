@@ -1,7 +1,5 @@
 "use client";
-
 import { motion } from "framer-motion"
-
 import { Mic } from "lucide-react"
 
 export default function FloatingMic() {
