@@ -88,7 +88,7 @@ export function ChatbotOverlay({ onClose }) {
 
   useEffect(() => {
     chatEndRef.current?.scrollIntoView({ behavior: "smooth" })
-  }, [chatEndRef])
+  }, [history])
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4">
@@ -100,7 +100,7 @@ export function ChatbotOverlay({ onClose }) {
           </Button>
         </CardHeader>
         <CardContent className="flex-grow flex flex-col">
-          <ScrollArea className="flex-grow mb-4 p-4 border rounded-md">
+          <ScrollArea className="flex-grow mb-4 p-4 border rounded-md h-[60vh] overflow-y-auto">
             {history.map((entry, index) => (
               <div key={index} className="mb-4">
                 <p className="bg-blue-100 p-2 rounded-lg inline-block">
@@ -128,4 +128,3 @@ export function ChatbotOverlay({ onClose }) {
     </div>
   )
 }
-
